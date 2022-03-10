@@ -18,21 +18,73 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+  
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
+      <script>
+        document.getElementById("currentDay").innerHTML =  moment().format("[Today's Date is] dddd MMMM Do YYYY");
+      </script>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class = "row">
+        <div class = "hour" id = "9"> 9am </div>
+        <div class = "col my-col col-a2 edit_cont" > </div>
+        <div class = "saveBtn"> save </div>
     </div>
-
+    <div class = "row" >
+        <div class = "hour" id = "10"> 10am </div>
+        <div class = "col my-col col-b2 edit_cont">  </div>
+        <div class = "saveBtn"> save </div>
+    </div>
+    <div class = "row" >
+        <div class = "hour" id = "11" > 11am </div>
+        <div class = "col my-col col-c2 edit_cont">  </div>
+        <div class = "saveBtn"> save </div>
+    </div>
+    <div class = "row">
+        <div class = "hour" id = "12"> 12m </div>
+        <div class = "col my-col col-a2 edit_cont" > </div>
+        <div class = "saveBtn"> save </div>
+    </div>
+    <div class = "row" >
+        <div class = "hour" id = "1"> 1pm </div>
+        <div class = "col my-col col-b2 edit_cont">  </div>
+        <div class = "saveBtn"> save </div>
+    </div>
+    <div class = "row" >
+        <div class = "hour" id = "2" > 2pm </div>
+        <div class = "col my-col col-c2 edit_cont">  </div>
+        <div class = "saveBtn"> save </div>
+    </div>
+    <div class = "row">
+        <div class = "hour" id = "3"> 3pm </div>
+        <div class = "col my-col col-a2 edit_cont" > </div>
+        <div class = "saveBtn"> save </div>
+    </div>
+    <div class = "row" >
+        <div class = "hour" id = "4"> 4pm </div>
+        <div class = "col my-col col-b2 edit_cont">  </div>
+        <div class = "saveBtn"> save </div>
+    </div>
+    <div class = "row" >
+        <div class = "hour" id = "5" > 5pm </div>
+        <div class = "col my-col col-c2 edit_cont">  </div>
+        <div class = "saveBtn"> save </div>
+     <script src="assets/script.js"></script>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script>console.log(moment())</script> 
   </body>
 </html>
