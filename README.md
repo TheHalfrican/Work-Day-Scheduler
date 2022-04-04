@@ -18,7 +18,7 @@ On the left of this webpage you will see times color coded by past, present and 
 
 ## Sample-Image
 
-![Sample Image](https://raw.githubusercontent.com/TheHalfrican/Noah-Mattocks-Portfolio/main/images/Sample-Image.png)
+![Sample Image](https://raw.githubusercontent.com/TheHalfrican/Work-Day-Scheduler/main/images/Sample-Image.png)
 
 ## Active Website
 
