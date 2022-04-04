@@ -1,7 +1,6 @@
-var saveButtonEl = document.querySelectorAll(".saveBtn");
-var editBoxEl = document.querySelectorAll("#editBox")
+// var saveButtonEl = document.querySelectorAll(".saveBtn");
+// var editBoxEl = document.querySelectorAll("#editBox")
 
-// var currentHour = moment().format("H")
 
 var t = moment().format("H")
 if (t < 9) {
@@ -76,21 +75,29 @@ if (t < 17) {
     document.getElementById("5").style.color="grey";
 }
 
-addEventListener("click", function(event) {
-    event.preventDefault();
+// addEventListener("click", function(event) {
+//     event.preventDefault();
 
-    let value = document.getElementById("editBox").value;
-    // localStorage.setItem(element.id);
-    textarea.value = localStorage.getItem(element.id)
-    savedInput = localStorage.getItem("textAreaValue", value);
-
+//     let value = document.getElementById("editBox").value;
+//     // localStorage.setItem(element.id);
+//     textarea.value = localStorage.getItem(element.id)
+//     savedInput = localStorage.getItem("textAreaValue", value);
    
-});
+//     function renderLastRegistered() {
+//         savedInput = localStorage.setItem("textAreaValue", value);
+//        };
+//    renderLastRegistered();
+// });
 
-function renderLastRegistered() {
- savedInput = localStorage.getItem("textAreaValue", value);
-};
+// function renderLastRegistered() {
+//  savedInput = localStorage.setItem("textAreaValue", value);
+// };
 
+const noteTextArea = document.getElementById("editBox1");
+const saveBtn1 = document.getElementById("saveBtn1")
 
-
+saveBtn1.onclick = function () {
+const value = noteTextArea.value
+console.log(value)
+}
 
